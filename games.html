@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🎮 Тематичні Ігри | DidPanas</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Кнопка "Назад" */
+    .btn-back {
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      background-color: #f0a500;
+      color: #1e2a38;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 5px;
+      border: 2px solid transparent;
+      text-decoration: none;
+      font-size: 0.9rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+      z-index: 1000;
+    }
+    .btn-back:hover,
+    .btn-back:focus {
+      background-color: #d18f00;
+      border-color: #f0a500;
+      color: #fff;
+      outline: none;
+    }
+
+    /* Хедер */
+    .header {
+      background-color: transparent;
+      color: #f0a500;
+      font-size: 2.2rem;
+      font-weight: 700;
+      text-align: center;
+      padding: 25px 15px;
+      margin-bottom: 20px;
+      user-select: none;
+    }
+
+    /* Контейнер */
+    main.container {
+      padding: 10px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      color: #fff;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      color: #f0a500;
+      text-align: center;
+    }
+
+    ul.game-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul.game-list li {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid #f0a500;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      padding: 12px 16px;
+    }
+
+    @media (max-width: 600px) {
+      .btn-back {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+      }
+
+      .header {
+        font-size: 1.8rem;
+        padding: 20px 10px;
+      }
+
+      main.container {
+        font-size: 0.95rem;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="particles-js"></div>
+
+  <a href="index.html" class="btn-back" aria-label="Повернутися назад">← Назад</a>
+
+  <header class="header">👑 DidPanas</header>
+
+  <main class="container">
+    <h1>🎮 Тематичні Ігри 🎮</h1>
+
+    <p><strong>Що таке "Тематичні ігри"?</strong></p>
+    <p>Це веселі інтерактивні розваги, які ми проводимо у нашому Telegram-чаті! Вони роблять атмосферу цікавішою, а вашу участь — незабутньою!</p>
+
+    <h2>✨ Що вас чекає?</h2>
+    <ul>
+      <li>Унікальні сюжети та квести для фанів нестандартних ігор</li>
+      <li>Ексклюзивні формати, яких ви не знайдете більше ніде</li>
+      <li>Веселощі, призи та можливість проявити себе!</li>
+    </ul>
+
+    <h2>🎲 Основні Ігри</h2>
+    <ul class="game-list">
+      <li><strong>«Математика»</strong> — обчисли приклад швидше за всіх! 5 правильних відповідей — і ти переможець.</li>
+      <li><strong>«Що? Де? Коли?»</strong> — питання, загадки, ребуси. Твоя швидкість і кмітливість — ключ до перемоги.</li>
+      <li><strong>«Прапори»</strong> — побачив прапор? Напиши країну першими! Гра на уважність та знання географії.</li>
+      <li><strong>«Столиці»</strong> — назвемо країну — назви її столицю! 5 балів — і слава твоя!</li>
+      <li><strong>«Країни»</strong> — тепер навпаки: ми даємо столицю, а ти — країну. Перевіримо, наскільки ти прокачаний!</li>
+    </ul>
+
+    <p><strong>Приєднуйся вже зараз!</strong> 🎉 Дізнавайся нове, показуй свою кмітливість і весело проводь час. 🌍</p>
+  </main>
+
+  <script src="particles.min.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('Particles.js loaded');
+    });
+  </script>
+
+</body>
+</html>

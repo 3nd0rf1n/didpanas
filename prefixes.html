@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Префікс | DidPanas</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f0f0f;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .box {
+      border: 3px solid #00cc66;
+      border-radius: 20px;
+      padding: 25px;
+      margin-top: 30px;
+      background: rgba(0, 0, 0, 0.6);
+      box-shadow: 0 0 10px #00cc66;
+    }
+
+    h1, h2 {
+      color: #00ff99;
+      text-align: center;
+    }
+
+    p, li {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .highlight {
+      color: #ffcc00;
+      font-weight: bold;
+    }
+
+    /* Кнопка "Назад" */
+    .btn-back {
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      background-color: #f0a500;
+      color: #1e2a38;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 5px;
+      border: 2px solid transparent;
+      text-decoration: none;
+      font-size: 0.9rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+      z-index: 1000;
+      user-select: none;
+    }
+    .btn-back:hover,
+    .btn-back:focus {
+      background-color: #d18f00;
+      border-color: #f0a500;
+      color: #fff;
+      outline: none;
+    }
+
+    @media (max-width: 768px) {
+      .box {
+        padding: 15px;
+      }
+
+      p, li {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+     <div id="particles-js"></div>
+  <a href="index.html" class="btn-back" aria-label="Повернутися назад">← Назад</a>
+
+  <div class="container">
+    <div class="box">
+      <h1>🖊 Префікс 🖊</h1>
+
+      <h2>🤔 Що таке «Префікс» ❓</h2>
+      <p>😉 Все просто, це <span class="highlight">адмін без прав</span>, який надає такі можливості:</p>
+      <ul>
+        <li>1. Писати під час ігор через «!»</li>
+        <li>2. Гарний підпис біля ніку який придумаєте самі</li>
+        <li>3. Не дає мут якщо ви щось написали під час гри</li>
+        <li>4. Виділяєтесь серед учасників</li>
+      </ul>
+
+      <h2>🤔 Як отримати «Префікс» ❓</h2>
+
+      <p><span class="highlight">📌 Варіант 1:</span><br>
+        Потрапити в адміни!
+      </p>
+
+      <p><span class="highlight">📌 Варіант 2:</span><br>
+        Додати нових людей в чат!
+      </p>
+      <ul>
+        <li>3 людини — 1 день префу</li>
+        <li>6 людей — 2 дні префу</li>
+        <li>10 людей — 4 дні префу</li>
+        <li>20 людей — 10 днів префу</li>
+      </ul>
+      <p><i>(Людей додати протягом дня)</i></p>
+
+      <p><span class="highlight">📌 Варіант 3:</span><br>
+        Купити!
+      </p>
+      <ul>
+        <li>5 днів — 15 грн</li>
+        <li>10 днів — 30 грн</li>
+        <li>20 днів — 50 грн</li>
+      </ul>
+    </div>
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

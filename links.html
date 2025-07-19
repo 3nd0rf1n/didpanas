@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🔗 Посилання | DidPanas</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Кнопка "Назад" */
+    .btn-back {
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      background-color: #f0a500;
+      color: #1e2a38;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 5px;
+      border: 2px solid transparent;
+      text-decoration: none;
+      font-size: 0.9rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+      z-index: 1000;
+    }
+    .btn-back:hover,
+    .btn-back:focus {
+      background-color: #d18f00;
+      border-color: #f0a500;
+      color: #fff;
+      outline: none;
+    }
+
+    /* Хедер */
+    .header {
+      background-color: transparent;
+      color: #f0a500;
+      font-size: 2.2rem;
+      font-weight: 700;
+      text-align: center;
+      padding: 25px 15px;
+      margin-bottom: 20px;
+      user-select: none;
+    }
+
+    /* Контейнер */
+    main.container {
+      padding: 10px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      color: #fff;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    /* Заголовки */
+    h1, h2 {
+      color: #f0a500;
+      text-align: center;
+    }
+
+    /* Стиль для посилань-кнопок */
+    .link-button {
+      display: block;
+      background-color: rgba(240, 165, 0, 0.1);
+      color: #f0a500;
+      border: 2px solid #f0a500;
+      border-radius: 12px;
+      padding: 12px 20px;
+      margin: 12px 0;
+      font-weight: 600;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      user-select: none;
+      box-shadow: 0 2px 8px rgba(240,165,0,0.2);
+    }
+    .link-button:hover,
+    .link-button:focus {
+      background-color: #f0a500;
+      color: #1e2a38;
+      outline: none;
+      box-shadow: 0 4px 12px rgba(240,165,0,0.6);
+    }
+
+    /* Адаптив */
+    @media (max-width: 600px) {
+      .btn-back {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+      }
+
+      .header {
+        font-size: 1.8rem;
+        padding: 20px 10px;
+      }
+
+      main.container {
+        font-size: 0.95rem;
+        padding: 10px;
+      }
+
+      .link-button {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="particles-js"></div>
+
+  <a href="index.html" class="btn-back" aria-label="Повернутися назад">← Назад</a>
+
+  <header class="header">👑 DidPanas</header>
+
+  <main class="container">
+    <h1>🔗 ПОСИЛАННЯ 🔗</h1>
+    <p style="text-align:center; font-style: italic; margin-bottom: 30px;">
+      🔎 Знайдіть те, що шукаєте, легко та швидко! 🔎
+    </p>
+
+    <a href="https://t.me/+-ybLMXW8I8Q2N2Iy" target="_blank" rel="noopener" class="link-button">
+      👑 Посилання на основний чатик - DidPanas
+    </a>
+
+    <a href="https://t.me/didpanas_photobatl" target="_blank" rel="noopener" class="link-button">
+      👑 Канал із інформацією - DidPanas Photo Batl 📷
+    </a>
+
+    <a href="https://t.me/didpanas_music" target="_blank" rel="noopener" class="link-button">
+      👑 Канал із музикою - DidPanas Music
+    </a>
+
+    <a href="https://www.tiktok.com/@didpanas_officiall" target="_blank" rel="noopener" class="link-button">
+      👑 TikTok - DidPanas TikTok
+    </a>
+  </main>
+
+  <script src="particles.min.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('Particles.js loaded');
+    });
+  </script>
+
+</body>
+</html>

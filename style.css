@@ -1,0 +1,234 @@
+/* Основні стилі */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121620; /* темний, глибокий фон */
+  color: #e1e4e8; /* світлий текст */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+  background: rgba(18, 22, 32, 0.85); /* напівпрозорий фон для контенту */
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* Хедер */
+.header {
+  background-color: transparent;
+  padding: 20px 0 10px 0;
+  text-align: center;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffba08; /* золотистий акцент */
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nav a {
+  color: #a5a8af;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.nav a:hover,
+.nav a:focus {
+  color: #ffba08;
+  border-color: #ffba08;
+  outline: none;
+}
+
+/* Секції */
+.section {
+  padding: 36px 0;
+  border-bottom: 1px solid #2c2f3a;
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+h1, h2 {
+  color: #e1e4e8;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+/* Списки */
+ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+ul li {
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 1.05rem;
+  color: #c1c4cc;
+}
+
+/* Футер */
+.footer {
+  background-color: #121620;
+  color: #6b6f7a;
+  text-align: center;
+  padding: 24px 12px;
+  font-size: 0.9rem;
+  border-top: 1px solid #2c2f3a;
+  margin-top: 40px;
+}
+
+/* Фон із частинками */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background: #121620;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  max-width: 260px; /* трохи вже */
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li a {
+  display: inline-block;
+  width: 300px;          /* Збільшена ширина */
+  background-color: #1e2a38;
+  color: #f0a500;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  user-select: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+
+ul li a:hover,
+ul li a:focus {
+  background-color: #f0a500;
+  color: #1e2a38;
+  outline: none;
+  box-shadow: 0 4px 8px rgba(240,165,0,0.6);
+}
+
+@media (max-width: 480px) {
+  .btn-back {
+    top: 10px;
+    left: 10px;
+    padding: 6px 14px;
+    font-size: 0.9rem;
+    border-radius: 25px;
+  }
+  .header {
+    font-size: 2rem;
+    padding: 20px 10px 15px;
+  }
+  h2 {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    padding: 0 10px;
+  }
+  main.container {
+    padding: 0 15px 30px;
+    margin-bottom: 40px;
+    max-width: 100%;
+  }
+  .rule-item {
+    padding: 18px 20px;
+    font-size: 0.95rem;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  .rule-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+  }
+  .rule-item ul {
+    padding-left: 18px;
+  }
+  footer.footer {
+    font-size: 0.85rem;
+    margin: 40px 10px 20px;
+  }
+}
+
+/* Планшети (481px до 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .btn-back {
+    top: 12px;
+    left: 12px;
+    padding: 7px 16px;
+    font-size: 1rem;
+    border-radius: 28px;
+  }
+  .header {
+    font-size: 2.4rem;
+    padding: 25px 12px 18px;
+  }
+  h2 {
+    font-size: 1.85rem;
+    margin-bottom: 35px;
+    padding: 0 12px;
+  }
+  main.container {
+    padding: 0 20px 35px;
+    margin-bottom: 50px;
+    max-width: 700px;
+  }
+  .rule-item {
+    padding: 22px 25px;
+    font-size: 1rem;
+    border-radius: 14px;
+    margin-bottom: 23px;
+  }
+  .rule-item h3 {
+    font-size: 1.45rem;
+    margin-bottom: 14px;
+  }
+  footer.footer {
+    font-size: 0.9rem;
+    margin: 45px 15px 25px;
+  }
+}
